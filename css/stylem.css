@@ -1,0 +1,204 @@
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+}
+
+.container{
+    width: 560px;
+    height: 100vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.header{
+    padding: 40px;
+    margin-top: 50px;
+    background-color: #7766C6;
+    border-radius: 2.5rem 2.5rem 1rem 1rem;
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title{
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.title img{
+    width: 165.1px;
+    height: 51px;
+}
+
+.description{
+    font-style: 13px;
+    text-align: center;
+}
+
+.youtube{
+    color: white;
+}
+
+.card-up{
+    background-color: #E0DFFE;
+    padding:30px 40px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+.card{
+    background-color: white;
+    border: #FDC311 solid 2px;
+    padding: 30px;
+    color: #46467A;
+    font-weight: 600;
+    border-radius: 32px;
+    margin-bottom: 10px;
+}
+
+.card span{
+    margin-left: 1rem;
+}
+
+.card input{
+    color: #46467A;
+}
+
+.input-control{
+    width: 100%;
+    display: block;
+    padding: 30px;
+    font-size: 1rem;
+    border-radius: 100px;
+    border: solid 2px #7766C6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    color: #46467A;
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    color: #B3B3B3;
+    font-size: 15px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-right{
+    text-align: right;
+}
+button{
+    font-size: 15px;
+    background-color: #7766C6;
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 600;
+    border-radius: 100px;
+    transition: .5s ease;
+}
+
+button:hover{
+    border-radius: 100px 100px 50px 50px;
+    box-shadow:0 5px #FDC311;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-task{
+    color: #7766C6;
+    font-size: 20px;
+}
+
+.delete-task{
+    color: red;
+    font-size: 20px;
+}
+
+.done{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.gelom{
+    z-index: -1;
+    position: absolute;
+    position: fixed;
+    bottom: 2px;
+    width: 100vw;
+    display: block;
+}
+
+.b1{
+    display: block;
+    right: 13%;
+    top: 120px;
+    position: absolute;
+    position: fixed;
+    width: 15vw;
+    z-index: -2; 
+}
+
+.b2{
+    display: block;
+    left: 16%;
+    top: 50%;
+    position: absolute;
+    position: fixed;
+    width: 15vw;
+    z-index: -2;
+}
+
+.lomdata{
+    background-color: #FDC311;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+input{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .b1{
+        right: -10%;
+        top: 200px; 
+        width: 40vw;
+    }
+
+    .b2{
+        left: -20%;
+        top: 450px; 
+        width: 50vw;
+    }
+  }
+
+  @media (max-width: 414px) {
+    .title img{
+        width: 112px;
+        height: 41px; 
+    }
+
+  }
